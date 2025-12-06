@@ -1,7 +1,7 @@
 # VirtualDatapointGenerator
 
 ## Description
-The **VirtualDatapointGenerator** is a Java-based algorithm to generate **Virtual Datapoints** inside the **System Configuration Tool**
+The **VirtualDatapointGenerator** is a Java based algorithm to generate **Virtual Datapoints** inside the **System Configuration Tool**
 
 https://docs.johnsoncontrols.com/bas/r/Metasys/de-DE/Katalogseite-fur-SCT-System-Configuration-Tool/16.0/SCT-System-Configuration-Tool
 
