@@ -1,8 +1,9 @@
 # VirtualDatapointGenerator
 
 ## Description
-The **VirtualDatapointGenerator** is a Java based algorithm to generate **Virtual Datapoints** inside the **System Configuration Tool**
+The **VirtualDatapointGenerator** is a Java based algorithm to generate **Virtual Datapoints** inside the **System Configuration Tool (SCT)**
 
+*SCT documentation:* 
 https://docs.johnsoncontrols.com/bas/r/Metasys/de-DE/Katalogseite-fur-SCT-System-Configuration-Tool/16.0/SCT-System-Configuration-Tool
 
 ![Tool User Interface](screenshots/GUI.png)
@@ -52,7 +53,7 @@ The project uses the following technologies and libraries:
 - **JavaFX** – for User Interface  
 - **Maven** – for project build and dependency management
 - **jlink and jpackage** - to generate a native windows image
-- ChatGPT** - for CSS styling   
+- **ChatGPT** - for CSS styling   
 
 ---
 
