@@ -12,7 +12,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/ui/main.fxml"));
         Parent root = loader.load();
         stage.setTitle("Virtual Datapoint Generator");
-        stage.setWidth(450);
+        stage.setWidth(550);
         stage.setHeight(250);
         stage.setResizable(false);
         stage.setScene(new Scene(root));
