@@ -59,7 +59,7 @@ The project uses the following technologies and libraries:
 ---
 
 ## Info
-**For privacy and data protection reasons, some details in the screenshots cannot be shown.  
+**For privacy and data protection reasons, some details and workflows cannot be shown.  
 If you have any questions regarding the data or the workflow, feel free to contact me.**
 
 
