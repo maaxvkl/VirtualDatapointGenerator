@@ -51,7 +51,8 @@ The project uses the following technologies and libraries:
 - **Document Object Model** – for reading and writing XML files  
 - **JavaFX** – for User Interface  
 - **Maven** – for project build and dependency management
-- **jlink and jpackage** - to generate a native windows image   
+- **jlink and jpackage** - to generate a native windows image
+- ChatGPT** - for CSS styling   
 
 ---
 
