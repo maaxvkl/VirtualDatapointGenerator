@@ -1,0 +1,50 @@
+
+.root {
+    -fx-background-color: #35393d;
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+
+.label {
+    -fx-text-fill: #d0d0d0;
+    -fx-font-size: 14px;
+}
+
+#statusLabel {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #2a2a2a;
+    -fx-padding: 4 8 4 8;
+    -fx-border-color: #444;
+    -fx-border-radius: 4;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 36px;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+#selectInputButton, #selectReferenceButton {
+    -fx-background-color: #1976D2;
+}
+#selectInputButton:hover, #selectReferenceButton:hover {
+    -fx-background-color: #2196F3;
+}
+
+
+#processButton {
+    -fx-background-color: #D32F2F;
+}
+#processButton:hover {
+    -fx-background-color: #E53935;
+}
+
+.hbox {
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
