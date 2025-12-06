@@ -2,6 +2,7 @@
 
 ## Description
 The **VirtualDatapointGenerator** is a Java-based algorithm to generate **Virtual Datapoints** inside the **System Configuration Tool**
+
 https://docs.johnsoncontrols.com/bas/r/Metasys/de-DE/Katalogseite-fur-SCT-System-Configuration-Tool/16.0/SCT-System-Configuration-Tool
 
 ![Tool User Interface](screenshots/GUI.png)
@@ -26,7 +27,9 @@ To generate these datapoints manually (generating, naming, setting up) it takes 
 ---
 
 ## The Solution
-The **VirtualDatapointGenerator** automates the generation and also takes care of the naming and the correct set up of the virtual datapoints
+The **VirtualDatapointGenerator** automates the generation and also takes care of the naming and the correct set up of the virtual datapoints.
+
+**It reades and writes XML files, by using the Document Object Model**
 
 1. The folder with the hardware datapoints and the destination folder for the virtual datapoints have to be exported from the **System Configuration Tool**  
 2. Both folders have to be selected in the **VirtualDatapointGenerator**
