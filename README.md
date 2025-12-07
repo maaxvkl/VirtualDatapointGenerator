@@ -37,7 +37,9 @@ The **VirtualDatapointGenerator** automates the generation and also takes care o
 2. Both folders have to be selected in the **VirtualDatapointGenerator**
 3. After clicking **Process and Save** a **.txt** file is generated  
 4. The content of the **.txt** file must be copied and pasted to the **export.xml** file inside the zip destination folder
-5. After clicking save, the destination folder can be imported back to the **System Configuration Tool** and the datapoints are generated  
+5. After clicking save, the destination folder can be imported back to the **System Configuration Tool** and the datapoints are generated
+
+**Days of work, done in seconds!**     
 
 *Example: Screenshot of an empty folder without the virtual datapoints*  
 ![Processed Excel file](screenshots/empty.png)
