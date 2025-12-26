@@ -71,11 +71,21 @@ public class WriteAnalogValues {
     }
 
     private String[] getValueSetpoints (String datapointDescription){
-        String descriptionSubstring = datapointDescription.substring(31).trim();
+        String descriptionSubstring = datapointDescription.substring(35).replaceAll("\\.", "").replaceAll(" ", "");
+        System.out.println(descriptionSubstring);
         String[] fallbackValues = {"0", "0", "0", "0"};
         switch(descriptionSubstring){
-            case  "ZU-Temp" : return defaultValues.getZUTempValues();
+            case "ZU-Temp" : return defaultValues.getZUTempValues();
             case "AB-Temp" : return defaultValues.getABTempValues();
+            case "AU-Temp" : return defaultValues.getAUTempValues();
+            case "ML-Temp" : return defaultValues.getMLTempValues();
+            case "Bypass-Temp" : return defaultValues.getBypassTempValues();
+            case "FO-Temp" : return defaultValues.getFOTempValues();
+            case "ZU-TempnWRG" : return defaultValues.getZUnWRGTempValues();
+            case "ZU-TempvorKuehler", "ZU-TempvKuehlregister": return defaultValues.getZUvKuehlerTempValues();
+            case "VE-NTVL-Temp", "VE-NTRL-Temp" : return defaultValues.getNTTempValues();
+            case "NE-HTVL-Temp", "NE-HTRL-Temp", "Bypass-ErhVL-Temp", "Bypass-ErhRL-Temp" : return defaultValues.getHTTempValues();
+            case "KuehlerVL-Temp", "KuehlerRL-Temp" : return defaultValues.getCoolingTempValues();
             default :  return fallbackValues;
         }
     }

@@ -18,9 +18,8 @@ public class ReadXMLFile {
     public Document loadXmlFromZip(File zipFile) throws Exception {
     try (FileInputStream fis = new FileInputStream(zipFile);
          ZipInputStream zis = new ZipInputStream(fis)) {
-
-        ZipEntry entry;
-        while ((entry = zis.getNextEntry()) != null) {
+         ZipEntry entry;
+         while ((entry = zis.getNextEntry()) != null) {
             String name = entry.getName();
             if (name.endsWith("export.xml")) {
                 return parseXmlFromStream(zis);
