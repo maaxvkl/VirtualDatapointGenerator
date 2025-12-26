@@ -1,7 +1,7 @@
 # VirtualDatapointGenerator
 
 ## Description
-The **VirtualDatapointGenerator** is a Java based algorithm to generate **Virtual Datapoints** inside the **System Configuration Tool (SCT)**
+The **VirtualDatapointGenerator** is a Java application that generates **virtual datapoints** inside the **System Configuration Tool (SCT)**
 
 *SCT documentation:*  
 https://docs.johnsoncontrols.com/bas/r/Metasys/en-US/Metasys-System-Configuration-Guide/11.0/Metasys-system/Tools/System-Configuration-Tool-SCT
@@ -24,26 +24,27 @@ For a specific customer in HVAC industry, for each hardware temperature measure 
 - Alarm HighHigh
 - Fault  
 
-To generate these datapoints manually (generating, naming, setting up) it takes at least 1-2 days of work (depends on the size of the system)  
+Generating these datapoints manually (creating, naming and configuring them) can take at least one day depending on the size of the system.  
 
 ---
 
 ## The Solution
 The **VirtualDatapointGenerator** automates the generation and also takes care of the naming and the correct set up of the virtual datapoints.
 
-**It reades and writes XML files, by using the Document Object Model**
+**It reads and writes XML files using the Document Object Model (DOM).**
 
-1. The folder with the hardware datapoints and the destination folder for the virtual datapoints have to be exported from the **System Configuration Tool**  
-2. Both folders have to be selected in the **VirtualDatapointGenerator**
-3. After clicking **Process and Save** a **.txt** file is generated  
-4. The content of the **.txt** file must be copied and pasted to the **export.xml** file inside the zip destination folder
-5. After clicking save, the destination folder can be imported back to the **System Configuration Tool** and the datapoints are generated
+How it works:
+1. Export the folder containing the hardware datapoints and the destination folder for the virtual datapoints from the System Configuration Tool (SCT).
+2. Select both folders in the VirtualDatapointGenerator.
+3. Click "Process and Save" — the tool generates a .txt file containing the XML snippet.
+4. Paste the content of the generated .txt file into the `export.xml` file inside the destination ZIP folder (replace/merge as required).
+5. Save the ZIP and import the destination folder back into the System Configuration Tool (SCT). The virtual datapoints will be created.
 
-**Days of work, done in seconds!**     
+**What used to take days now completes in minutes!**     
 
-*Example: Screenshot of an empty folder without the virtual datapoints*  
+*Screenshot of an empty folder without the virtual datapoints*   
 ![Processed Excel file](screenshots/empty.png)
-*Example: Screenshot of an folder filled with the virtual datapoints*  
+*Screenshot of a folder after the virtual datapoints were generated and imported back to the System Configuration Tool (SCT)*
 ![Successful import back to Jabot](screenshots/generated.png)
 
 ---
@@ -51,17 +52,16 @@ The **VirtualDatapointGenerator** automates the generation and also takes care o
 ## Tools & Technologies
 The project uses the following technologies and libraries:
 
-- **Java 21** – main programming language  
-- **Document Object Model** – for reading and writing XML files  
-- **JavaFX** – for User Interface  
-- **Maven** – for project build and dependency management
-- **jlink and jpackage** - to generate a native windows image
-- **ChatGPT** - for CSS styling   
+- **Java 21** — main programming language  
+- **Document Object Model (DOM)** — for reading and writing XML files  
+- **JavaFX** — user interface  
+- **Maven** — build and dependency management  
+- **jlink / jpackage** — to generate a native Windows image  
+- **ChatGPT** — used for CSS styling assistance
 
 ---
 
-## Info
-**For privacy and data protection reasons, some details and workflows cannot be shown.  
-If you have any questions regarding the data or the workflow, feel free to contact me.**
+## Privacy / Notes
+**For privacy and data-protection reasons some implementation details and workflows are omitted from this repository. If you have questions about the data or the workflow, feel free to contact me.**
 
 
